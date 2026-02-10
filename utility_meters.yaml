@@ -1,0 +1,17 @@
+  rainfall_daily:
+    name: Rainfall Today
+    source: sensor.raingage_rainfall_total
+    cycle: daily
+    unique_id: rainfall_daily  # Optional: helps with Lovelace cards
+
+  rainfall_weekly:
+    name: Rainfall This Week
+    source: sensor.raingage_rainfall_total
+    cycle: weekly
+    unique_id: rainfall_weekly
+
+  rainfall_monthly:
+    name: Rainfall This Month
+    source: sensor.raingage_rainfall_total
+    cycle: monthly
+    unique_id: rainfall_monthly
