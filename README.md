@@ -24,7 +24,7 @@ short-term rolling totals and calendar-based summaries.
 ### Wiring
 ```
                                ESP32  ┋  Rain Gauge Reed Switch
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+===========================================================================
                                       ┋    
 3.3V ━━━━━━━━━━[10kΩ]━━━━━━━━━┓       ┋
 GPIO18 (input) ━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━ (reed switch closes on tip)
