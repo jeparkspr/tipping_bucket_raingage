@@ -1,26 +1,24 @@
-  # Rolling total rainfall over last 5 minutes
+  # Rolling total rainfall sensors (statistics platform)
   - platform: statistics
-    name: "Rainfall Total 5 min"
+    name: "Rainfall Total 5 min Raw"
     entity_id: sensor.raingage_rainfall_total
-    state_characteristic: change  # Delta = newest - oldest in the window
+    state_characteristic: change
     max_age:
       minutes: 5
-    sampling_size: 999  # Large enough to capture all possible updates in 5 min (tips are rare, so safe)
+    sampling_size: 999
     precision: 2
 
-  # Rolling total rainfall over last 15 minutes
   - platform: statistics
-    name: "Rainfall Total 15 min"
+    name: "Rainfall Total 15 min Raw"
     entity_id: sensor.raingage_rainfall_total
     state_characteristic: change
     max_age:
       minutes: 15
     sampling_size: 999
     precision: 2
-    
-  # Rolling total rainfall over last 30 minutes
+
   - platform: statistics
-    name: "Rainfall Total 30 min"
+    name: "Rainfall Total 30 min Raw"
     entity_id: sensor.raingage_rainfall_total
     state_characteristic: change
     max_age:
@@ -28,9 +26,8 @@
     sampling_size: 999
     precision: 2
 
-  # Rolling total rainfall over last 60 minutes
   - platform: statistics
-    name: "Rainfall Total 60 min"
+    name: "Rainfall Total 60 min Raw"
     entity_id: sensor.raingage_rainfall_total
     state_characteristic: change
     max_age:

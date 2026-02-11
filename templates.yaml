@@ -1,0 +1,40 @@
+  - sensor:
+      - name: "Rainfall Total 5 min"
+        unique_id: rainfall_total_5min
+        state: >
+          {% set raw = states('sensor.rainfall_total_5_min_raw') %}
+          {{ raw | float(0) if raw not in ['unavailable', 'unknown'] else 0.0 | round(2) }}
+        unit_of_measurement: "in"
+        device_class: precipitation
+        state_class: measurement
+        icon: "mdi:weather-rainy"
+
+      - name: "Rainfall Total 15 min"
+        unique_id: rainfall_total_15min
+        state: >
+          {% set raw = states('sensor.rainfall_total_15_min_raw') %}
+          {{ raw | float(0) if raw not in ['unavailable', 'unknown'] else 0.0 | round(2) }}
+        unit_of_measurement: "in"
+        device_class: precipitation
+        state_class: measurement
+        icon: "mdi:weather-rainy"
+
+      - name: "Rainfall Total 30 min"
+        unique_id: rainfall_total_30min
+        state: >
+          {% set raw = states('sensor.rainfall_total_30_min_raw') %}
+          {{ raw | float(0) if raw not in ['unavailable', 'unknown'] else 0.0 | round(2) }}
+        unit_of_measurement: "in"
+        device_class: precipitation
+        state_class: measurement
+        icon: "mdi:weather-rainy"
+
+      - name: "Rainfall Total 60 min"
+        unique_id: rainfall_total_60min
+        state: >
+          {% set raw = states('sensor.rainfall_total_60_min_raw') %}
+          {{ raw | float(0) if raw not in ['unavailable', 'unknown'] else 0.0 | round(2) }}
+        unit_of_measurement: "in"
+        device_class: precipitation
+        state_class: measurement
+        icon: "mdi:weather-rainy"
