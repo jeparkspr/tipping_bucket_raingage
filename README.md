@@ -41,7 +41,8 @@ GND ━━━━━━━━━━━━━━━━━━━━━━━━━�
 All configuration files are in the root of this repository:
 
 - `raingage.yaml` → ESPHome device configuration (flashed to ESP32)
-- `sensors.yaml` → Home Assistant rolling totals (5/15/30/60 min) using `statistics` platform
+- `sensors.yaml` → Home Assistant rolling raw totals (5/15/30/60 min) using `statistics` platform
+- `templates.yaml` → Home Assistant rolling totals for display (5/15/30/60 min) using `statistics` platform
 - `utility_meters.yaml` → Home Assistant calendar totals (daily/weekly/monthly) using `utility_meter`
 
 These files are referenced from `configuration.yaml` like so:
