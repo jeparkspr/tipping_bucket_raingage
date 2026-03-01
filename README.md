@@ -90,4 +90,13 @@ Change both if your gauge uses a different calibration.
 - MQTT publishing for non-HA integrations
 
 ## License
+
 MIT – free to use, modify, and share.
+
+## Images
+
+Tipping Bucket Raingage
+![Tipping Bucket Raingage](https://github.com/jeparkspr/tipping_bucket_raingage/blob/main/Raingage%201.jpg "Tipping Bucket Raingage")
+
+Tipping bucket mechanism
+![Tipping Bucket Mechanism](https://github.com/jeparkspr/tipping_bucket_raingage/blob/main/Raingage%202.jpg "Tipping Bucket Mechanism")
